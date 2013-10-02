@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+================================================================================================================================================
+ (C) Copyright, Alexandr Sitnikov, 2007
+================================================================================================================================================
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="CallDefault">
+        <!-- свойства -->
+        <ItemGroup>
+                <BuildProjects Include="SB.Sync.Classes\SB.Sync.Classes.csproj"/>
+                <BuildProjects Include="SB.Sync.Svc\SB.Sync.Svc.csproj"/>
+        </ItemGroup>
+
+        <!-- импорт общего файла build процесса -->
+        <Import Project="$(DEVROOT)\run\build_default_vs.xml"/>
+
+        <!-- вызов в конце файла -->
+        <Target Name="CallDefault">
+                <CallTarget Targets="Default" />
+        </Target>
+
+</Project>
+
+
+
+
+
+

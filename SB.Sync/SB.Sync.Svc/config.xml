@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DefaultConnectionType>FirebirdSql.Data.FirebirdClient.FbConnection,FirebirdSql.Data.FirebirdClient</DefaultConnectionType>
+  <DefaultSyncDatabaseConnectionType>SB.Sync.Svc.FbSyncDatabaseConnection,SB.Sync.Svc</DefaultSyncDatabaseConnectionType>
+  <DefaultListenAddress>net.tcp://localhost:8881/sync</DefaultListenAddress>
+  <DefaultSyncDelay>300</DefaultSyncDelay>
+  <DefaultLinkRetries>5</DefaultLinkRetries>
+  <DefaultRetryAfterErrorsDelay>7200</DefaultRetryAfterErrorsDelay>
+  <Connections>
+    <Connection xsi:type="Database" Name="oper_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/oper.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="oper_sync" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=svr35z4:/var/db/oper.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_main" ListenEvents="false">
+      <ConnectionString>Database=fdb:ch;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_sync" ListenEvents="false">
+      <ConnectionString>Database=svr35z4:/var/db/ch.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="valreestr_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:valreestr;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="valreestr_skov_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/skov/valreestr.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="valreestr_magdag_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/magdag/valreestr.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="valreestr_shiman_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/shiman/valreestr.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="valreestr_sync" ListenEvents="false">
+      <ConnectionString>Database=svr35z4:/var/db/valreestr.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_ep_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/erofey/ch.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_mg_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/magdag/ch.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_sh_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/shiman/ch.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_zv_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/zavitn/ch.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_sv_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/svobodn/ch.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_bu_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/bureya/ch.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_bl_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:ch_bl;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_sk_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/offices/skov/ch.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_ep_sync" ListenEvents="false">
+      <ConnectionString>Database=svr35z4:/var/db/ch_ep.fdb;User=SYSDBA;Password=3Ky1u6nd</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="ch_all" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:ch_all;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="kredclient_main" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=fdb:/var/db/kredclient.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="kredclient_sync" ListenEvents="false">
+      <ConnectionString>Database=svr35z4:/var/db/kredclient.fdb;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+    <Connection xsi:type="Database" Name="operf" AllowedRemoteAccess="true" ListenEvents="false">
+      <ConnectionString>Database=svr35z4:operf;User=SYSDBA;Password=3Ky1u6nd;Pooling=false</ConnectionString>
+    </Connection>
+  </Connections>
+  <Links>
+    <SyncLink Name="Резерв: опердень" Enabled="false">
+      <Local>oper_main</Local>
+      <Remote>oper_sync</Remote>
+      <LocalId>201000001</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Резерв: вклады" Enabled="false">
+      <Local>ch_main</Local>
+      <Remote>ch_sync</Remote>
+      <LocalId>202000001</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Благовещенск - Общая" Enabled="true">
+      <Local>ch_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202000002</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Бурея - Общая" Enabled="true">
+      <Local>ch_bu_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001001</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Завитинск - Общая" Enabled="true">
+      <Local>ch_zv_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001002</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Белогорск - Общая" Enabled="true">
+      <Local>ch_bl_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001003</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Свободный - Общая" Enabled="true">
+      <Local>ch_sv_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001004</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Шимановск - Общая" Enabled="true">
+      <Local>ch_sh_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001005</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Магдагачи - Общая" Enabled="true">
+      <Local>ch_mg_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001006</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Сковородино - Общая" Enabled="true">
+      <Local>ch_sk_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001007</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Вклады: Ерофей - Общая" Enabled="true">
+      <Local>ch_ep_main</Local>
+      <Remote>ch_all</Remote>
+      <LocalId>202001008</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Резерв: вал.реестр" Enabled="false">
+      <Local>valreestr_main</Local>
+      <Remote>valreestr_sync</Remote>
+      <LocalId>206000001</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Резерв: Вклады Ерофей" Enabled="false">
+      <Local>ch_ep_main</Local>
+      <Remote>ch_ep_sync</Remote>
+      <LocalId>202080001</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+    <SyncLink Name="Резерв: Кредитный клиент" Enabled="false">
+      <Local>kredclient_main</Local>
+      <Remote>kredclient_sync</Remote>
+      <LocalId>205000001</LocalId>
+      <LocalFilters />
+      <RemoteFilters />
+      <LinkRetries>0</LinkRetries>
+      <RetryAfterErrorsDelay>0</RetryAfterErrorsDelay>
+    </SyncLink>
+  </Links>
+  <Params />
+</Config>

@@ -1,0 +1,84 @@
+Номер участника формируется таким образом, 11 значный:
+
+1. начальная единичка
+2. номер базы данных (вид базы данных)
+3. номер места, родного для этой БД
+4. номер точки, 00 - это основная, совпадает с главной БД
+5. 2 резервных разряда
+
+например
+104030000
+
+
+Базы данных:
+
+01 Операционный день
+02 Вклады
+03 Кредиты
+04 Удаленный клиент
+05 Кредитный клиент
+06 Валютный реестр
+
+
+Офисы:
+00 голова
+01-08 по таблице офисов
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (101000000, 'Операционный день: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (101000100, 'Операционный день: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102000000, 'Вклады: Благовещенск: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102000100, 'Вклады: Благовещенск: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102010000, 'Вклады: Бурея: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102010100, 'Вклады: Бурея: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102020000, 'Вклады: Завитинск: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102020100, 'Вклады: Завитинск: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102030000, 'Вклады: Белогорск: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102030100, 'Вклады: Белогорск: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102040000, 'Вклады: Свободный: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102040100, 'Вклады: Свободный: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102050000, 'Вклады: Шимановск: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102050100, 'Вклады: Шимановск: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102060000, 'Вклады: Магдагачи: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102060100, 'Вклады: Магдагачи: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102070000, 'Вклады: Сковородино: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102070100, 'Вклады: Сковородино: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102080000, 'Вклады: Ерофей: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102080100, 'Вклады: Ерофей: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (106000000, 'Валютный реестр: основная', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (106000100, 'Валютный реестр: резерв', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (104010000, 'Клиент: Бурея: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102010000, 'Вклады: Бурея: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (105010000, 'Кредитный клиент: Бурея: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (106010000, 'Валютный реестр: Бурея: Основная БД', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (104020000, 'Клиент: Завитинск: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102020000, 'Вклады: Завитинск: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (105020000, 'Кредитный клиент: Завитинск: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (106020000, 'Валютный реестр: Завитинск: Основная БД', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (104030000, 'Клиент: Белогорск: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102030000, 'Вклады: Белогорск: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (105030000, 'Кредитный клиент: Белогорск: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (106030000, 'Валютный реестр: Белогорск: Основная БД', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (104030000, 'Клиент: Свободный: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102030000, 'Вклады: Свободный: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (105030000, 'Кредитный клиент: Свободный: Основная БД', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (106030000, 'Валютный реестр: Свободный: Основная БД', 0);
+
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (104030100, 'Клиент: Белогорск: БД в головном офисе', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (102030100, 'Вклады: Белогорск: БД в головном офисе', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (105030100, 'Кредитный клиент: Белогорск: БД в головном офисе', 0);
+INSERT INTO SYNC_PARTICIPANT (ID, NAME, DEF) VALUES (106030100, 'Валютный реестр: Белогорск: БД в головном офисе', 0);
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SB.Sync">
+</Property><Property Name="Solution File" Value="C:\devel\dotnet\Apps\Sync\SB.Sync\SB.Sync.sln">
+</Property><Property Name="Date" Value="14 февраля 2008 г.">
+</Property><Property Name="Time" Value="11:51">
+</Property></Properties><Event ErrorLevel="0" Project="SB.Sync.Classes" Source="SB.Sync.Classes\SB.Sync.Classes.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SB.Sync.Classes" Source="SB.Sync.Classes\SB.Sync.Classes.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SB.Svc.Base" Source="..\..\..\Lib\SB.Svc.Base\SB.Svc.Base.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SB.Svc.Base" Source="..\..\..\Lib\SB.Svc.Base\SB.Svc.Base.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SB.Sync.Svc" Source="SB.Sync.Svc\SB.Sync.Svc.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SB.Sync.Svc" Source="SB.Sync.Svc\SB.Sync.Svc.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SB.Sync.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SB.Sync.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SB.Sync.Classes" Source="SB.Sync.Classes\SB.Sync.Classes.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SB.Svc.Base" Source="..\..\..\Lib\SB.Svc.Base\SB.Svc.Base.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SB.Sync.Svc" Source="SB.Sync.Svc\SB.Sync.Svc.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

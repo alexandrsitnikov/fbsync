@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SB.Sync.Svc.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConfigFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">config.xml</Value>
+    </Setting>
+    <Setting Name="LinksLogDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">log\links</Value>
+    </Setting>
+    <Setting Name="LinksLogPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">%date %-5level [%X{db_name}] - %message%newline</Value>
+    </Setting>
+    <Setting Name="MaxErrors" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
